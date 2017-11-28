@@ -1,0 +1,23 @@
+############################################################
+# WARSHALL ALGORITHM
+############################################################
+# Lucas Fonseca dos Santos - Federal Univeristy of Lavras.
+#
+# > With a sequence {a, x1, x2, ..., xm-1, b} of vertices,
+#   contains as intermediary vertices {x1, x2, ..., xm-1}
+#
+# > Matrix Wk = [Wij^k] | Wij^k = 1 if existsa way between
+#   vi to vj with intermediary vertices by set {v1, v2, 
+#   ..., vk}
+#
+# > Cases: 1) Vk it isn't part of the way between Vi and Vj;
+#          2) Vk is part of the way between Vi and Vj;
+#
+############################################################
+procedure Warshall(M)
+    W <- M
+    for k <- 1 to n do
+        for i <- 1 to n do
+            for j <- 1 to n do
+                Wij <- Wij V (Wik ^ Wkj)
+    return W
